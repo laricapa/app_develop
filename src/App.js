@@ -1,10 +1,19 @@
-
-
+import {
+  Container,
+  Flex
+} from '@chakra-ui/react'
+import ContainerNav from './components/ContainerNav';
+import SectionOne from './components/SectionOne';
 function App() {
   return (
-    <div>
-      <h1>Leiton Aricapa Balvin </h1>
-    </div>
+    <>
+      <Container w="full" maxW="100%"  h={100}>
+       <ContainerNav />
+      </Container>
+      <Container maxW="container.lg">
+      <SectionOne />
+      </Container>
+    </>
   );
 }
 
